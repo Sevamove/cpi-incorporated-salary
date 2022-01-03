@@ -68,7 +68,7 @@ This will deploy the contracts as well as mock contracts, request recent CPI dat
 ```bash
 brownie run scripts/main.py
 ```
-This will do the same thing... but on Kovan. Make sure that you have minimum 0.5 ETH and 100 LINK on your account. After that you want to register [new Upkeep](https://keepers.chain.link/). Set the GAS limit to 600000 and add 50 LINK. 
+This will do the same thing... but on Kovan. Make sure that you have minimum 0.5 ETH and 100 LINK on your Kovan testnet account. After that you want to register [new Upkeep](https://keepers.chain.link/). Set the GAS limit to 600000 and add 50 LINK. 
 ```bash
 brownie run scripts/main.py --network kovan
 ```
