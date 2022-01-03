@@ -1,0 +1,54 @@
+dependencies:
+    - OpenZeppelin/openzeppelin-contracts@4.4.0
+    - smartcontractkit/chainlink-brownie-contracts@0.3.0
+compiler:
+    solc:
+        remappings:
+            - "@openzeppelin=OpenZeppelin/openzeppelin-contracts@4.4.0"
+            - "@chainlink=smartcontractkit/chainlink-brownie-contracts@0.3.0"
+networks:
+    mainnet:
+        payment_interval: 2592000 # in seconds (30 days)
+    development:
+        job_id: "29fa9aa13bf1468788b7cc4a500a45b8"
+        fee: 100000000000000000 # 0.1
+        swap_fee: 3000 # 0.3%
+        payment_interval: 0 # in seconds
+        swap_router: "0xE592427A0AEce92De3Edee1F18E0157C05861564"
+        weth_token: "0xd0A1E359811322d97991E03f863a0C30C2cF029C"
+        #dai_token: "0xFf795577d9AC8bD7D90Ee22b6C1703490b6512FD"
+        dai_token: "0x4F96Fe3b7A6Cf9725f59d353F723c1bDb64CA6Aa" # uniswap kovan
+        wait_seconds: 3
+        verify: False
+    ganache:
+        verify: False
+    kovan:
+        oracle: "0xc57B33452b4F7BB189bB5AfaE9cc4aBa1f7a4FD8"  
+        job_id: "d5270d1c311941d0b08bead21fea7747"
+        swap_fee: 3000 # 0.3%
+        payment_interval: 60 # in seconds
+        swap_router: "0xE592427A0AEce92De3Edee1F18E0157C05861564"
+        #dai_token: "0xFf795577d9AC8bD7D90Ee22b6C1703490b6512FD"
+        dai_token: "0x4F96Fe3b7A6Cf9725f59d353F723c1bDb64CA6Aa" # uniswap kovan
+        fee: 100000000000000000 # 0.1
+        link_token: "0xa36085F69e2889c224210F603D836748e7dC0088"
+        weth_token: "0xd0A1E359811322d97991E03f863a0C30C2cF029C"
+        fau_token: "0xaFF4481D10270F50f203E0763e2597776068CBc5"
+        uni_token: "0x1f9840a85d5af5bf1d1762f925bdaddc4201f984"
+        dai_usd_price_feed: "0x777A68032a88E5A84678A77Af2CD65A7b3c0775a"
+        dai_eth_price_feed: "0x22B58f1EbEDfCA50feF632bD73368b2FdA96D541"
+        eth_usd_price_feed: "0x9326BFA02ADD2366b30bacB125260Af641031331"
+        uni_usd_price_feed: "0xDA5904BdBfB4EF12a3955aEcA103F51dc87c7C39"
+        wait_seconds: 35
+        verify: True
+    rinkeby:
+        verify: False
+    mainnet-fork:
+        verify: False
+wallets:
+    account_1: "0x9E0CF3884824968D3AE73Fe772326DF8804Cc5Dd"
+    account_2: "0x2a6236006e615ce83815B9bD875Daf6E098161a3"
+    account_3: "0xcFd1F498BB64784f09C9beb5eC92781FAb770819"
+    account_4: "0xF3CbF965F041C66Ac91Bb7EA0bbf2F0954DAA803"
+    from_key: ${PRIVATE_KEY}
+dotenv: .env

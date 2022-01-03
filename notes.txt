@@ -1,0 +1,13 @@
+GUI
+
+Company page
+
+Connect wallet
+
+Add employee
+    Address of the employee
+    Initial salary
+    Payment interval
+    Prefered payment token to recieve
+    
+
