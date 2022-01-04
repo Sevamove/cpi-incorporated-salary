@@ -95,7 +95,7 @@ def swap(
     print(f"Swapping WETH for {amount_out} of DAI...")
 
     account = get_account()
-    swap_router = interface.ISwapRouter(get_contract("swap_router"))
+    swap_router = interface.ISwapRouter(config["networks"][network.show_active()]["swap_router"])
 
     tx_approve_token_in = token_in.approve(
         swap_router, amount_in_maximum, {"from": account}

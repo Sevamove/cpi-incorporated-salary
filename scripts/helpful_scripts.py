@@ -8,7 +8,6 @@ from brownie import (
     MockV3AggregatorDAIETH,
     MockDAI,
     MockWETH,
-    MockUniswap,
     Contract,
 )
 from web3 import Web3
@@ -76,7 +75,6 @@ contract_to_mock = {
     "fau_token": MockDAI,
     "weth_token": MockWETH,
     "dai_token": MockDAI,
-    "swap_router": MockUniswap,
 }
 
 def get_contract(contract_name):
@@ -153,9 +151,6 @@ def deploy_mocks():
     print("Deploying Mock WETH...")
     mock_weth = MockWETH.deploy({"from": account})
     print(f"Deployed to {mock_weth.address}")
-    print("Deploying MockUniswap")
-    mock_uniswap = MockUniswap.deploy({"from": account})
-    print(f"Deployed to {mock_uniswap.address}")
     print("Mocks Deployed!")
 
 def fund_with_link(
