@@ -1,6 +1,7 @@
 ## Todo's:
 ### Frontend:
 - [ ] _Company: Make web GUI for the company using React with Typescript._
+- [ ] _Main: Make a website that allows different companies to pay their employees._
 ### Backend:
 - [ ] _Diverse ERC20 tokens support (e.g. `WBTC`, `UNI`, `USDT`, `USDC`)._
 - [ ] _Diverse fiat support (e.g. EUR, GBP, CHF, JPY, CNY, RUB)._
@@ -15,4 +16,3 @@
 - [ ] _Tx: Solve issue with random tx droppings._
 - [ ] _Python: Include datatypes in front of each function's parameter in Python scripts._
 - [ ] _Python: Check Python scripts for PEP8 style standards._
-
