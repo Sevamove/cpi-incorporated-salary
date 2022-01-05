@@ -16,3 +16,4 @@
 - [ ] _Tx: Solve issue with random tx droppings._
 - [ ] _Python: Include datatypes in front of each function's parameter in Python scripts._
 - [ ] _Python: Check Python scripts for PEP8 style standards._
+- [ ] _Company: Separate an unique company with their employees from another unique company with their employees.
