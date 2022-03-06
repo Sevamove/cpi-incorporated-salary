@@ -1,3 +1,5 @@
+> This repo has been achived temporary due to unmaintenance.
+
 # Employee's salary incorporated with the most recent consumer price index (CPI) in Belgium.
 > _This project was created in order to understand DeFi and Blockchain developent in general. If you would like to experiment with it by yourself please consider to deploy the contract on the testnet only._
 
